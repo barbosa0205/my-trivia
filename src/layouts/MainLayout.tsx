@@ -10,7 +10,7 @@ const MainLayout = (props: Props) => {
   return (
     <>
       <Header />
-      <main>{props.children}</main>
+      <main className='container h-screen'>{props.children}</main>
       <Footer />
     </>
   )
