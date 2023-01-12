@@ -27,6 +27,48 @@ export const trivias: trivia[] = [
           },
         ],
       },
+      {
+        question: '¿Cuanto es 65 - 33?',
+        answers: [
+          {
+            answer: '30',
+            correct: false,
+          },
+          {
+            answer: '31',
+            correct: false,
+          },
+          {
+            answer: '32',
+            correct: true,
+          },
+          {
+            answer: '33',
+            correct: false,
+          },
+        ],
+      },
+      {
+        question: '¿Cuanto es 5 X 3?',
+        answers: [
+          {
+            answer: '15',
+            correct: true,
+          },
+          {
+            answer: '10',
+            correct: false,
+          },
+          {
+            answer: '20',
+            correct: false,
+          },
+          {
+            answer: '18',
+            correct: false,
+          },
+        ],
+      },
     ],
   },
   {

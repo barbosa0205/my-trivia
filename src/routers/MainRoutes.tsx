@@ -2,8 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Explore from '../pages/Explore'
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
-import Trivia from '../pages/Trivia'
-
+import TriviaPage from '../pages/TriviaPage'
 export const MainRoutes = () => {
   const router = createBrowserRouter([
     {
@@ -17,7 +16,7 @@ export const MainRoutes = () => {
     },
     {
       path: '/trivia/:id',
-      element: <Trivia />,
+      element: <TriviaPage />,
     },
   ])
 

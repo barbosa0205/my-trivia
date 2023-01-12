@@ -3,7 +3,7 @@ interface answer {
   correct: boolean
 }
 
-interface question {
+export interface question {
   question: string
   answers: answer[]
 }
