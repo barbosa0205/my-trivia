@@ -94,7 +94,7 @@ export const trivias: trivia[] = [
           },
           {
             answer: 'Leonardo Davinci',
-            correct: false,
+            correct: true,
           },
         ],
       },
