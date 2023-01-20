@@ -9,7 +9,7 @@ interface Props {
 
 const TriviaChoice = ({
   text,
-  bgColor = 'bg-gray-200',
+  bgColor = 'bg-gray-50',
   otherStyles,
   ...rest
 }: Props) => {

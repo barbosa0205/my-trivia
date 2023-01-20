@@ -1,10 +1,13 @@
 import { trivia } from '../interfaces/index'
+import mathSvg from '../assets/Mathematics.svg'
+import cultureSvg from '../assets/Castle.svg'
 export const trivias: trivia[] = [
   {
     id: 'maths',
-    trivia: 'Matématicas',
-    image: '',
+    trivia: 'MATÉMATICAS',
+    image: mathSvg,
     desc: '',
+    color: '#f76868',
     questions: [
       {
         question: '¿Cuanto es 2 + 2?',
@@ -73,9 +76,10 @@ export const trivias: trivia[] = [
   },
   {
     id: 'general_culture',
-    trivia: 'Cultura General',
-    image: '',
+    trivia: 'CULTURA GENERAL',
+    image: cultureSvg,
     desc: '',
+    color: '#7f40b6',
     questions: [
       {
         question: '¿Quien pinto la monalisa?',
@@ -95,6 +99,48 @@ export const trivias: trivia[] = [
           {
             answer: 'Leonardo Davinci',
             correct: true,
+          },
+        ],
+      },
+      {
+        question: '¿En qué año murió Freddie Mercury?',
+        answers: [
+          {
+            answer: '1995',
+            correct: false,
+          },
+          {
+            answer: '1991',
+            correct: true,
+          },
+          {
+            answer: '1992',
+            correct: false,
+          },
+          {
+            answer: '1990',
+            correct: false,
+          },
+        ],
+      },
+      {
+        question: '¿Qué presidente de Estados Unidos fue asesinado en Dallas?',
+        answers: [
+          {
+            answer: 'George Bush ',
+            correct: false,
+          },
+          {
+            answer: 'Thomas Jefferson',
+            correct: false,
+          },
+          {
+            answer: 'John F. Kennedy',
+            correct: true,
+          },
+          {
+            answer: 'Abraham Lincon',
+            correct: false,
           },
         ],
       },

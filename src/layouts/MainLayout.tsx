@@ -8,11 +8,11 @@ interface Props {
 
 const MainLayout = (props: Props) => {
   return (
-    <>
+    <div className='h-screen container max-w-7xl mx-auto bg-white'>
       <Header />
-      <main className='container h-screen mx-auto'>{props.children}</main>
+      <main className='container mx-auto h-full'>{props.children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 

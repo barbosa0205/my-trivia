@@ -34,7 +34,7 @@ const TriviaPage = () => {
   }, [params])
 
   return (
-    <main className='container mx-auto'>
+    <main className='container mx-auto bg-white'>
       {!trivia && loading ? (
         <p>loading</p>
       ) : trivia ? (

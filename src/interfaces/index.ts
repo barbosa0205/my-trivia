@@ -13,5 +13,6 @@ export interface trivia {
   trivia: string
   image: string
   desc: string
+  color: string
   questions: question[]
 }
