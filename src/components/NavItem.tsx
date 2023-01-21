@@ -12,7 +12,7 @@ const NavItem = (props: Props) => {
   return (
     <li
       onClick={() => navigate(props.to)}
-      className='text-lg font-semibold text-sky-500 cursor-pointer'
+      className='text-lg font-semibold text-sky-500 cursor-pointer font-mono'
     >
       {props.title}
     </li>

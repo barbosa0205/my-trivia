@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav className='px-2'>
       <ul>
-        <NavItem title='Explore' to='/explore' />
+        <NavItem title='Explora' to='/explore' />
       </ul>
     </nav>
   )

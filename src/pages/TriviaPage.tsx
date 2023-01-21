@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import TriviaGame from '../components/TriviaGame.js'
 import { trivias } from '../data/trivias.js'
 import { trivia as triviaInterface } from '../interfaces/index.js'
 import MainLayout from '../layouts/MainLayout.js'
 
 const TriviaPage = () => {
+  const navigate = useNavigate()
   const params = useParams()
   const [trivia, setTrivia] = useState<triviaInterface | null | undefined>(null)
 
@@ -35,6 +36,13 @@ const TriviaPage = () => {
 
   return (
     <main className='container mx-auto bg-white'>
+      {/* back */}
+      <div className='w-full flex items-center justify-start'>
+        <i
+          onClick={() => navigate('/explore')}
+          className='ri-arrow-left-fill text-5xl p-2 text-sky-600 hover:text-sky-500 cursor-pointer'
+        ></i>
+      </div>
       {!trivia && loading ? (
         <p>loading</p>
       ) : trivia ? (
