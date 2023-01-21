@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Home = () => {
   const navigate = useNavigate()
   return (
-    <MainLayout className={'sm:flex justify-center items-center h-5/6'}>
+    <MainLayout className={'sm:flex justify-center items-center h-screen'}>
       <div className='w-full flex justify-center items-center'>
         <h1 className='ml-5 mt-5 max-w-xl text-5xl text-gray-700 font-bold text-center font-mono'>
           BIENVENIDO A MY TRIVIA APP 🚀
